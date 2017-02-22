@@ -33,7 +33,8 @@ function pageReady() {
 
 function getUserMediaSuccess(stream) {
     localStream = stream;
-    localVideo.src = window.URL.createObjectURL(stream);
+    //localVideo.src = window.URL.createObjectURL(stream);
+    localVideo.srcObject =stream;
 }
 
 function start(isCaller) {
